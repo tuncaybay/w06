@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class BisikletYedekParca {
 
-    String yedekParcaAdi=null;
+    String yedekParcaAdi = null;
 
     public BisikletYedekParca(String yedekParcaAdi) {
         setYedekParcaAdi(parcaIsimFormatla(yedekParcaAdi));
@@ -33,9 +33,9 @@ public class BisikletYedekParca {
     }
 
     private String parcaIsimTersCevir(String parcaIsim) {
-        String tempParcaIsim = null;
+        String tempParcaIsim = "";
         for (int i = parcaIsim.length() - 1; i >= 0; i--)
-            tempParcaIsim += parcaIsim.charAt(i);
+            tempParcaIsim +=  parcaIsim.charAt(i);
         return tempParcaIsim;
     }
 
